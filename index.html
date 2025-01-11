@@ -15,7 +15,7 @@
           <!-------------------First Frame----------------->
           <div class="FrameOne flex items-center gap-2">
             <div class="Logo w-[19.16px] h-6">
-              <img src="./Images/Group.png" alt="Logo" />
+              <img src="./Images/Group (1).png" alt="Logo" />
             </div>
             <div class="Intense w-[76.54px] h-[15.51px]">
               <img src="./Images/Intense.png" alt="Menu" />
@@ -25,19 +25,40 @@
           <!----------------------Desktop Navigation----------------->
           <div class="hidden md:flex items-center justify-between gap-6">
             <div class="FrameSecond flex gap-10">
-              <div class="text-[#363636] text-base font-medium cursor-pointer">
+              <div
+                class="group relative text-[#363636] text-base font-medium cursor-pointer"
+              >
                 Features
+                <span
+                  class="absolute bottom-[-5px] left-0 h-[5px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full"
+                ></span>
               </div>
-              <div class="text-[#363636] text-base font-medium cursor-pointer">
+              <div
+                class="group relative text-[#363636] text-base font-medium cursor-pointer"
+              >
                 Solutions
+                <span
+                  class="absolute bottom-[-5px] left-0 h-[5px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full"
+                ></span>
               </div>
-              <div class="text-[#363636] text-base font-medium cursor-pointer">
+              <div
+                class="group relative text-[#363636] text-base font-medium cursor-pointer"
+              >
                 Download
+                <span
+                  class="absolute bottom-[-5px] left-0 h-[5px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full"
+                ></span>
               </div>
-              <div class="text-[#363636] text-base font-medium cursor-pointer">
+              <div
+                class="group relative text-[#363636] text-base font-medium cursor-pointer"
+              >
                 Support
+                <span
+                  class="absolute bottom-[-5px] left-0 h-[5px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full"
+                ></span>
               </div>
             </div>
+
             <div class="flex items-center gap-4">
               <div class="flex items-center gap-2">
                 <img
@@ -71,9 +92,6 @@
             class="Hamburger flex flex-col gap-1 md:hidden cursor-pointer"
             onclick="toggleMenu()"
           >
-            <!-- <span class="block w-6 h-0.5 bg-black"></span>
-            <span class="block w-6 h-0.5 bg-black"></span>
-            <span class="block w-6 h-0.5 bg-black"></span> -->
             <img src="./Images/menu-02.png" alt="Image" />
           </div>
         </div>
@@ -84,17 +102,37 @@
         class="MobileMenu hidden flex-col items-start bg-white shadow-md p-4 md:hidden"
       >
         <div class="flex flex-col gap-4">
-          <div class="text-[#363636] text-base font-medium cursor-pointer">
+          <div
+            class="group w-[fit-content] relative text-[#363636] text-base font-medium cursor-pointer"
+          >
             Features
+            <span
+              class="absolute bottom-[-5px] left-0 h-[5px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full"
+            ></span>
           </div>
-          <div class="text-[#363636] text-base font-medium cursor-pointer">
+          <div
+            class="group w-[fit-content] relative text-[#363636] text-base font-medium cursor-pointer"
+          >
             Solutions
+            <span
+              class="absolute bottom-[-5px] left-0 h-[5px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full"
+            ></span>
           </div>
-          <div class="text-[#363636] text-base font-medium cursor-pointer">
+          <div
+            class="group w-[fit-content] relative text-[#363636] text-base font-medium cursor-pointer"
+          >
             Download
+            <span
+              class="absolute bottom-[-5px] left-0 h-[5px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full"
+            ></span>
           </div>
-          <div class="text-[#363636] text-base font-medium cursor-pointer">
+          <div
+            class="group w-[fit-content] relative text-[#363636] text-base font-medium cursor-pointer"
+          >
             Support
+            <span
+              class="absolute bottom-[-5px] left-0 h-[5px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full"
+            ></span>
           </div>
         </div>
         <div class="flex flex-col gap-4 mt-4">
@@ -1318,7 +1356,7 @@
     </div>
 
     <!------------------------------Next Section---------------->
-    <div class="container mx-auto">
+    <div class="container mx-auto py-[100px]">
       <div
         class="w-full h-[116px] flex flex-col justify-center items-center gap-16 py-[100px]"
       >
@@ -1409,7 +1447,7 @@
           </div>
           <!-- Right Box -->
           <div
-            class="w-full sm:w-[400px] md:w-[560px] h-[400px] sm:h-[450px] md:h-[521px] relative"
+            class="w-full sm:w-[400px] md:w-[560px] h-[400px] sm:h-[450px] md:h-[521px] relative md:hidden lg:block"
           >
             <!-- Background Layer -->
             <div
@@ -1466,7 +1504,7 @@
               class="self-stretch h-14 flex flex-col justify-start items-center gap-4"
             >
               <div
-                class="self-stretch text-center text-[#041b0b] text-[32px] sm:text-[52px] font-bold font-['Cabinet Grotesk Variable'] leading-[56px]"
+                class="self-stretch text-center text-[#041b0b] text-[32px] md:text-[52px] font-bold font-['Cabinet Grotesk Variable'] leading-[56px]"
               >
                 What it costs for productivity?
               </div>
@@ -1477,7 +1515,7 @@
 
       <!-- Neck Content -->
       <div class="neck py-[30px]">
-        <div class="h-[34px] w-[full] justify-center items-center gap-6 flex">
+        <div class="h-[34px] w-full justify-center items-center gap-6 flex">
           <div
             class="px-3 py-1.5 rounded-md justify-center items-center gap-2.5 flex"
           >
@@ -1635,6 +1673,262 @@
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------Next Step--------------------------------->
+    <div class="container mx-auto">
+      <div class="w-full h-[521px] pb-[17px] flex justify-center items-center">
+        <div
+          class="grow shrink basis-0 self-stretch flex flex-col lg:flex-row justify-center gap-[100px] items-start gap-6"
+        >
+          <!-- Left Column -->
+          <div
+            class="w-full lg:w-[525px] flex-col justify-start items-start gap-6 inline-flex"
+          >
+            <div
+              class="self-stretch text-[#041b0b] text-[32px] sm:text-[52px] font-bold font-['Cabinet Grotesk Variable'] leading-[56px]"
+            >
+              Got questions? we’ve got answers
+            </div>
+            <div
+              class="self-stretch text-[#363636] text-base font-medium font-['Satoshi Variable'] leading-tight"
+            >
+              Explore our FAQs to learn more about how Intense Team can
+              streamline your workflow and boost productivity.
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div
+            class="w-full lg:w-[646px] flex-col justify-start items-start gap-5 inline-flex"
+          >
+            <!-- FAQ Item 1 -->
+            <div
+              class="self-stretch h-[68px] px-[30px] py-[22px] bg-neutral-50 flex justify-between items-center"
+            >
+              <div
+                class="text-gray-500 text-base font-normal font-['Satoshi Variable'] leading-[17.60px]"
+              >
+                What is Intense Team and how does it work?
+              </div>
+              <div
+                class="w-6 h-6 relative origin-top-left rotate-360 overflow-hidden"
+              >
+                <img src="./Images/Icon.png" alt="Downarrou" />
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div
+              class="self-stretch h-[68px] px-[30px] py-[22px] bg-neutral-50 flex justify-between items-center"
+            >
+              <div
+                class="text-gray-500 text-base font-normal font-['Satoshi Variable'] leading-[17.60px]"
+              >
+                How do I get started with Intense Team?
+              </div>
+              <div
+                class="w-6 h-6 relative origin-top-left rotate-360 overflow-hidden"
+              >
+                <img src="./Images/Icon.png" alt="Downarrou" />
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div
+              class="self-stretch h-[68px] px-[30px] py-[22px] bg-neutral-50 flex justify-between items-center"
+            >
+              <div
+                class="text-gray-500 text-base font-normal font-['Satoshi Variable'] leading-[17.60px]"
+              >
+                What kind of customer support is available?
+              </div>
+              <div
+                class="w-6 h-6 relative origin-top-left rotate-360 overflow-hidden"
+              >
+                <img src="./Images/Icon.png" alt="Downarrou" />
+              </div>
+            </div>
+
+            <!-- Active FAQ Item -->
+            <div
+              class="self-stretch h-auto flex-col justify-start items-start gap-2 flex"
+            >
+              <div
+                class="self-stretch h-[68px] px-[30px] py-[22px] bg-[#d5f486] rounded-[5px] border flex justify-between items-center"
+              >
+                <div
+                  class="text-[#041b0b] text-base font-normal font-['Satoshi Variable'] leading-[17.60px]"
+                >
+                  How does Intense Team help improve team productivity?
+                </div>
+                <div
+                  class="w-6 h-6 relative origin-top-left rotate-180 overflow-hidden"
+                >
+                  <img src="./Images/Icon (1).png" alt="Uparrou" />
+                </div>
+              </div>
+
+              <!-- Answer Section -->
+              <div
+                class="px-10 py-2.5 justify-center items-center gap-2.5 inline-flex"
+              >
+                <div
+                  class="w-full lg:w-[533px] text-[#363636] text-base font-normal font-['Satoshi Variable'] leading-normal"
+                >
+                  Intense Team enhances productivity by providing real-time
+                  monitoring, task management, and performance analytics all in
+                  one platform. By tracking live activities, work hours, and
+                  engagement levels, teams can identify bottlenecks and improve
+                  workflows. With tools like customizable dashboards and
+                  inactivity alerts, you can ensure that your team stays
+                  focused, organized, and on track to meet deadlines.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gap between this content and the next section -->
+    <div class="container mx-auto sm:mt-[200px] mt-[200px]">
+      <!-- Increased margin for sm and md screens -->
+      <div
+        class="card w-full max-w-[1440px] h-[500px] bg-[#F8FDEA] rounded-[20px] my-[40px] sm:my-[60px] flex justify-center px-4 sm:px-8"
+      >
+        <div
+          class="text flex flex-col items-center justify-center mt-[60px] sm:mt-[80px] w-full sm:w-[90%] lg:w-[80%]"
+        >
+          <div
+            class="h-[151.76px] flex-col justify-start items-center gap-1.5 inline-flex w-full"
+          >
+            <div
+              class="text-center text-[#313131] text-[28px] sm:text-[42px] lg:text-[52px] font-bold font-['Cabinet Grotesk Variable'] leading-[56px]"
+            >
+              Discover a Better Way to Manage Your Team
+            </div>
+            <div
+              class="w-full sm:w-[90%] md:w-[588.38px] text-center text-[#969696] text-base sm:text-lg font-normal font-['Satoshi Variable'] leading-normal"
+            >
+              Track your team’s progress and improve productivity with Intense
+              Team.
+            </div>
+          </div>
+          <div
+            class="h-12 px-5 py-3.5 bg-[#18a23f] rounded-lg shadow-[0px_2px_6px_0px_rgba(16,24,40,0.06)] border border-[#18a23f] justify-center items-center gap-2 inline-flex my-[40px] sm:my-[50px] w-[80%] sm:w-auto"
+          >
+            <div
+              class="text-center text-white text-base font-medium font-['Satoshi Variable'] leading-[18px]"
+            >
+              Request a Demo
+            </div>
+            <div class="w-5 h-5 relative overflow-hidden"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------------Footer---------------------------->
+    <div class="container mx-auto flex justify-center my-[150px]">
+      <div
+        class="w-full max-w-[1360px] h-auto px-6 sm:px-10 pt-14 pb-[62px] bg-[#041b0b] rounded-3xl justify-center items-center flex flex-wrap overflow-hidden"
+      >
+        <div class="w-full flex flex-col justify-start items-center gap-8">
+          <!-- Header Section -->
+          <div
+            class="w-full flex justify-between items-center flex-wrap gap-4 border-b-2 pb-4"
+          >
+            <div
+              class="text-white text-2xl sm:text-[36px] md:text-[52px] font-medium font-['Cabinet Grotesk'] leading-snug"
+            >
+              Start Using Intense Teams
+            </div>
+            <div class="w-12 sm:w-16">
+              <img src="./Images/Vector 9.png" alt="Image" />
+            </div>
+          </div>
+
+          <!-- Content Section -->
+          <div class="w-full flex flex-wrap justify-start gap-8">
+            <!-- Left Section -->
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center gap-4">
+                <div class="w-8 h-8 sm:w-[30px] sm:h-[37px]">
+                  <img src="./Images/Group (2).png" alt="Image" />
+                </div>
+                <div
+                  class="text-white text-base sm:text-lg font-medium font-['Satoshi']"
+                >
+                  Intense Teams
+                </div>
+              </div>
+              <div
+                class="text-[#b8b8b8] text-sm sm:text-lg font-normal font-['Satoshi Variable']"
+              >
+                Kathmandu, Nepal, Vrit Tech
+              </div>
+            </div>
+
+            <!-- Menu Section -->
+            <div class="flex flex-col gap-4">
+              <div
+                class="text-white text-lg sm:text-2xl font-medium font-['Satoshi']"
+              >
+                Menu
+              </div>
+              <div
+                class="flex flex-col gap-2 text-[#b8b8b8] text-sm sm:text-lg font-normal font-['Satoshi']"
+              >
+                <div>Home</div>
+                <div>About</div>
+                <div>Features</div>
+                <div>Pricing</div>
+                <div>Blog</div>
+              </div>
+            </div>
+
+            <!-- Social Links Section -->
+            <div class="flex flex-col gap-4">
+              <div
+                class="text-white text-lg sm:text-2xl font-medium font-['Satoshi']"
+              >
+                Social Links
+              </div>
+              <div
+                class="flex flex-col gap-2 text-[#b8b8b8] text-sm sm:text-lg font-normal font-['Satoshi']"
+              >
+                <div>Instagram</div>
+                <div>LinkedIn</div>
+                <div>Twitter</div>
+                <div>Facebook</div>
+                <div>Get a demo</div>
+              </div>
+            </div>
+
+            <!-- Privacy Policy Section -->
+            <div class="flex flex-col gap-4">
+              <div
+                class="text-white text-lg sm:text-2xl font-medium font-['Satoshi']"
+              >
+                Privacy Policy
+              </div>
+              <div
+                class="flex flex-col gap-2 text-[#b8b8b8] text-sm sm:text-lg font-normal font-['Satoshi']"
+              >
+                <div>Terms of Service</div>
+                <div>Privacy Note</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Section -->
+          <div
+            class="w-full text-center text-white text-sm sm:text-lg font-normal font-['Satoshi'] leading-snug mt-8"
+          >
+            Copyright 2023 © Intense Team
           </div>
         </div>
       </div>
