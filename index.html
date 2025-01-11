@@ -820,7 +820,7 @@
               <img
                 src="./Images/Frame.png"
                 alt="Real-Time Monitoring Icon"
-                class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 mr-4 transform transition-transform duration-300 group-hover:translate-y-[-25px]"
+                class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 mr-4 transform transition-transform duration-300 group-hover:rotate-[-65deg]"
               />
             </div>
           </div>
@@ -831,12 +831,21 @@
             <div class="text_two">
               <h3 class="text-2xl font-medium text-white">Inactivity Alerts</h3>
             </div>
-            <div class="img_two flex justify-start items-end h-[147px]">
-              <img
-                src="./Images/Group 16.png"
-                alt="Inactivity Alerts Icon"
-                class="w-40 sm:w-48 md:w-56 lg:w-64 h-20 sm:h-24 md:h-28 lg:h-[100px] transition-all duration-300 ease-in-out group-hover:h-36"
-              />
+            <div
+              class="img_two flex justify-between items-end h-[147px] gap-[100px]"
+            >
+              <div class="imgON">
+                <img
+                  src="./Images/Group 16.png"
+                  alt="Inactivity Alerts Icon"
+                  class="w-40 sm:w-48 md:w-56 lg:w-64 h-20 sm:h-24 md:h-28 lg:h-[100px] transition-all duration-300 ease-in-out group-hover:h-36"
+                />
+              </div>
+              <div
+                class="imgto h-[100%] transform transition-transform duration-300 group-hover:rotate-[-65deg]"
+              >
+                <img src="./Images/Vector 1.png" alt="Arrow" />
+              </div>
             </div>
           </div>
           <!----------------------Middle Lower Card----------------------->
@@ -914,7 +923,7 @@
                     class="p-3 bg-[#f1f1de] rounded-[70px] flex justify-center items-center"
                   >
                     <div class="w-6 h-6 relative overflow-hidden">
-                      <img src="./Images/clock-snooze.png" alt="Clock" />
+                      <img src="./Images/clock-rewind.png" alt="Clock" />
                     </div>
                   </div>
                   <div class="flex flex-col justify-start items-start gap-3">
@@ -988,7 +997,7 @@
                   class="w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] relative overflow-hidden"
                 >
                   <img
-                    src="./Images/clock-snoozeBlack.png"
+                    src="./Images/clock-rewind.png"
                     alt="Clock"
                     class="w-full h-full"
                   />
@@ -1014,6 +1023,7 @@
             </div>
 
             <!-- List Container -->
+            now i need this 3d flip in this code
             <div
               class="w-[90%] max-w-[400px] pb-5 left-[112px] top-[171px] absolute bg-[#e8edea] rounded-xl justify-center items-center inline-flex overflow-hidden"
             >
@@ -1225,8 +1235,92 @@
     <!------------------------Next Content----------------------->
     <div class="ContentThree">
       <!-- Title Section -->
+      <div class="w-full flex flex-col justify-center items-center gap-6 py-10">
+        <div class="flex flex-col justify-center items-center">
+          <div
+            class="px-5 py-1 bg-[#dff1c2] rounded-md border border-lime-500 inline-flex"
+          >
+            <div class="text-center text-[#4d4d4d] text-base font-medium">
+              Reasons
+            </div>
+          </div>
+          <div
+            class="text-center text-[#041b0b] text-2xl sm:text-4xl font-bold mt-4"
+          >
+            Why they chose Intense?
+          </div>
+        </div>
+      </div>
+
+      <!-- Boxes Section -->
+      <div class="boxes flex flex-wrap justify-center gap-6 px-4 sm:px-0">
+        <!-- Box 1 -->
+        <div
+          class="w-full sm:w-[500px] h-auto p-6 bg-[#49875b] rounded-xl text-[#f8fdea] flex flex-col gap-4"
+        >
+          <div class="flex items-center gap-4">
+            <div
+              class="w-8 h-8 bg-[#f8fdea] rounded-full flex justify-center items-center"
+            >
+              <img src="./Images/plus.png" alt="Icon" />
+            </div>
+          </div>
+          <div class="text-xl font-semibold">
+            Stay Accountable, Work Transparently
+          </div>
+          <div class="text-base">
+            Keep your team focused and distraction-free with real-time
+            monitoring and detailed activity logs.
+          </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div
+          class="w-full sm:w-[500px] h-auto p-6 bg-[#e7fced] rounded-xl flex flex-col gap-4"
+        >
+          <div class="flex items-center gap-4">
+            <div
+              class="w-8 h-8 bg-[#1b7a84] rounded-full flex justify-center items-center"
+            >
+              <img src="./Images/plus (1).png" alt="Icon" />
+            </div>
+          </div>
+          <div class="text-xl font-semibold text-black">
+            Work Smarter, Not Harder
+          </div>
+          <div class="text-base text-[#595959]">
+            Empower managers to make informed decisions and employees to deliver
+            their best work every day.
+          </div>
+        </div>
+
+        <!-- Box 3 (Hidden on Mobile) -->
+        <div
+          class="hidden sm:flex w-full sm:w-[500px] h-auto p-6 bg-[#e7fced] rounded-xl flex-col gap-4"
+        >
+          <div class="flex items-center gap-4">
+            <div
+              class="w-8 h-8 bg-[#1b7a84] rounded-full flex justify-center items-center"
+            >
+              <img src="./Images/plus (1).png" alt="Icon" />
+            </div>
+          </div>
+          <div class="text-xl font-semibold text-black">
+            Simplify, Streamline, Succeed
+          </div>
+          <div class="text-base text-[#595959]">
+            Automate time tracking, payroll integration, and compliance tasks
+            for your team’s success. Intense Team makes managing remote and
+            hybrid teams effortless.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------Next Section---------------->
+    <div class="container mx-auto">
       <div
-        class="w-full h-[116px] flex flex-col justify-center items-center gap-16 py-[50px]"
+        class="w-full h-[116px] flex flex-col justify-center items-center gap-16 py-[100px]"
       >
         <div class="h-[116px] flex flex-col justify-start items-center gap-6">
           <div
@@ -1235,7 +1329,7 @@
             <div
               class="text-center text-[#4d4d4d] text-base font-medium font-['Satoshi Variable'] leading-normal"
             >
-              Reasons
+              Statistics
             </div>
           </div>
           <div
@@ -1244,100 +1338,302 @@
             <div
               class="self-stretch text-center text-[#041b0b] text-[32px] sm:text-[52px] font-bold font-['Cabinet Grotesk Variable'] leading-[56px]"
             >
-              Why they chose Intense?
+              Our impact in numbers
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Boxes Section -->
-      <div class="boxes flex flex-wrap justify-center py-[70px] gap-10">
-        <!-- Box 1 -->
+      <!------------------------ Body contents ------------------------->
+      <div class="body">
         <div
-          class="w-full sm:w-[500px] h-[290px] px-[42px] py-[34px] bg-[#49875b] rounded-xl flex flex-col justify-start items-start gap-2.5"
+          class="h-auto md:h-[547px] flex flex-wrap justify-center items-end gap-6"
         >
-          <div class="w-[34.50px] h-[34.50px] relative">
+          <!-- Left Box -->
+          <div class="w-full md:w-[590px] h-auto md:h-[547px] relative">
             <div
-              class="w-[34.50px] h-[34.50px] absolute left-[400px] bg-[#f8fdea] rounded-full"
-            ></div>
-            <div
-              class="w-[26.10px] h-[26.10px] absolute left-[405px] top-[4.20px] overflow-hidden"
+              class="w-[90%] md:w-[303px] h-[275px] left-0 top-[30px] absolute bg-black/20 rounded-[20px] border-8 backdrop-blur-[84px] mx-auto md:mx-0"
             >
-              <img src="./Images/plus.png" alt="Image" />
+              <img
+                class="w-full h-full object-cover rounded-[20px]"
+                src="https://s3-alpha-sig.figma.com/img/11ae/a10b/ee749d51337169f1b4679d60e5480fb0?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mUGMfxwHrMfML2eOdBnaL3suMTWb3DBe9ZU0NrziHM9OKYcgACkpUgItFCR1hnO0g3hjKienFLilme8mWmn55iDeiy2DMCw68NoukdWocbdb4xSnTMMU6fvPMBnv-skTU5eWwyLrS6Ypksy50-qwAudVXrLBR9WP1G4Dumi2Sao6gxzSEqiR1JIwo6xKxVLXUaF-yDjKLP3qLN84zgOB43~KP5JC5d8VipFSoyVJKis4TEixHbSLMihrqUrfQ86H57Cw8lwhmoofM1T8IMTSmxArv0SOc~sA8qKPxx8ytZnfYcXwPHyKaxt3iwrKuySw0A-C4OPTTtpUscEet2wUbA__"
+                alt="ImageLaptop"
+              />
+            </div>
+            <!-- Hidden Box for Mobile -->
+            <div
+              class="hidden md:block w-[90%] md:w-[259px] h-[281px] left-[330px] top-[26px] absolute mx-auto md:mx-0"
+            >
+              <div
+                class="h-[270px] top-[5px] absolute flex flex-col justify-start items-start gap-[30px] bg-[#D9D9D9] p-5 rounded-[20px]"
+              >
+                <div
+                  class="w-full text-center text-[#0d2e1b] text-5xl md:text-8xl font-bold font-['Cabinet Grotesk'] leading-[62px]"
+                >
+                  150+
+                </div>
+                <div
+                  class="w-full text-[#0d2e1b] text-lg md:text-xl font-normal font-['Satoshi Variable'] leading-snug"
+                >
+                  Some big companies that we work with and trust us very much
+                </div>
+              </div>
+            </div>
+            <!-- Bottom Section -->
+            <div
+              class="w-full md:w-[588px] h-[216px] left-[2px] top-[331px] absolute mx-auto md:mx-0"
+            >
+              <div
+                class="w-full h-full left-0 top-0 absolute bg-[#010205] rounded-xl backdrop-blur-[84px]"
+              ></div>
+              <div
+                class="w-full h-full left-0 top-0 absolute bg-[#041b0b] rounded-xl backdrop-blur-[84px]"
+              ></div>
+              <div
+                class="h-auto left-[33px] top-[42px] absolute flex flex-col justify-start items-start gap-8"
+              >
+                <div class="justify-start items-center gap-[13px] inline-flex">
+                  <div
+                    class="text-[#e8edea] text-sm font-medium font-['Satoshi Variable'] leading-[17.64px]"
+                  >
+                    Enhance productivity/team efficiency.
+                  </div>
+                </div>
+                <div
+                  class="w-full text-[#e8f6ec] text-lg md:text-[32px] font-medium font-['Cabinet Grotesk'] leading-[37.12px]"
+                >
+                  Boost Productivity, Streamline Workflow
+                </div>
+              </div>
             </div>
           </div>
-          <div class="h-[140px] flex flex-col justify-start items-start gap-6">
+          <!-- Right Box -->
+          <div
+            class="w-full sm:w-[400px] md:w-[560px] h-[400px] sm:h-[450px] md:h-[521px] relative"
+          >
+            <!-- Background Layer -->
             <div
-              class="text-[#f8fdea] text-[28px] font-medium font-['Satoshi Variable'] leading-9"
+              class="w-full h-full left-0 top-[6px] absolute bg-[#010205] rounded-2xl"
+            ></div>
+
+            <!-- Image Layer -->
+            <div class="w-full h-full left-0 top-0 absolute">
+              <img
+                class="w-full h-full object-cover rounded-2xl"
+                src="https://s3-alpha-sig.figma.com/img/63f1/4495/8faec5ca2baf17f8d70907e903039726?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ePqabMPgQHT6FzsAcDZgeIW2-8KhGuOJ7gbV6qJzHuDbNqgF-TCa5WAqCZjgaLL5TWJJCGxKWD2EV9lJsDrK~excCulMiOz7A-hucKzESr434rlNpLCCyUqeDDnA~eVHUuP3ZRPjQ~L0ntP4i23GZMz7o-uqbN8OZlSTseVieiaCxY~DeLYStfqkCHGHuniUQHifQjolTNNeiUIsKR0QGjufwc7LvGKObIJ1CkE1bvET~Yph4z2NAtSALE8qCsAAlEqMEC~NiiJpKWmfTpAHa~a~FNfxIJjpzHjuJO6HlTmAC3WPN0xrFSaeOYRf9HD3GpWNcuPGicByR-tY5Lf-pw__"
+                alt="Productivity"
+              />
+            </div>
+
+            <!-- Content Layer -->
+            <div
+              class="w-full h-auto left-[30px] sm:left-[50px] md:left-[76px] top-[40px] sm:top-[50px] md:top-[58px] absolute flex flex-col justify-center items-start gap-[20px] sm:gap-[25px] md:gap-[27px]"
             >
-              Stay Accountable, Work Transparently
+              <div
+                class="text-[#d7f43d] text-[40px] sm:text-[50px] md:text-[64px] font-bold font-['Cabinet Grotesk'] leading-[50px] sm:leading-[70px] md:leading-[96px]"
+              >
+                42%
+              </div>
+              <div
+                class="text-[#d5f486] text-sm sm:text-base md:text-[19px] font-medium font-['Satoshi Variable'] leading-relaxed"
+              >
+                Productivity increase reported
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------Next Design--------------------------------->
+
+    <div class="container mx-auto py-[150px]">
+      <!-- Head Content -->
+      <div class="head">
+        <div
+          class="w-full h-[116px] flex flex-col justify-center items-center gap-16 py-[100px]"
+        >
+          <div class="h-[116px] flex flex-col justify-start items-center gap-6">
+            <div
+              class="px-[19px] py-1.5 bg-[#dff1c2] rounded-md border border-lime-500 justify-center items-center gap-2.5 inline-flex"
+            >
+              <div
+                class="text-center text-[#4d4d4d] text-base font-medium font-['Satoshi Variable'] leading-normal"
+              >
+                Pricing Plans
+              </div>
             </div>
             <div
-              class="self-stretch text-[#f8fdea] text-lg font-medium font-['Satoshi Variable'] leading-snug"
+              class="self-stretch h-14 flex flex-col justify-start items-center gap-4"
             >
-              Keep your team focused and distraction-free with real-time
-              monitoring and detailed activity logs.
+              <div
+                class="self-stretch text-center text-[#041b0b] text-[32px] sm:text-[52px] font-bold font-['Cabinet Grotesk Variable'] leading-[56px]"
+              >
+                What it costs for productivity?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Neck Content -->
+      <div class="neck py-[30px]">
+        <div class="h-[34px] w-[full] justify-center items-center gap-6 flex">
+          <div
+            class="px-3 py-1.5 rounded-md justify-center items-center gap-2.5 flex"
+          >
+            <div
+              class="text-center text-[#686868] text-base font-normal font-['Satoshi Variable'] leading-snug"
+            >
+              Monthly
+            </div>
+          </div>
+          <div class="w-[52.64px] h-7 relative">
+            <div
+              class="w-[52.64px] h-7 left-0 top-0 absolute bg-[#3fb260] rounded-3xl"
+            ></div>
+            <div
+              class="w-[19.60px] h-[19.04px] left-[27.44px] top-[4.48px] absolute bg-white rounded-full shadow-[0px_2.2400004863739014px_2.2400004863739014px_0px_rgba(0,0,0,0.25)]"
+            ></div>
+          </div>
+          <div
+            class="px-3 py-1.5 rounded-md justify-center items-center gap-2.5 flex"
+          >
+            <div
+              class="text-center text-[#686868] text-base font-normal font-['Satoshi Variable'] leading-snug"
+            >
+              Annually
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Body Content -->
+      <div class="body flex flex-wrap gap-[30px] justify-center my-[20px]">
+        <!-- Box 1 -->
+        <div
+          class="w-[361.33px] h-[555px] bg-[#f3faf5] rounded-xl border border-[#a6deb6] p-6"
+        >
+          <div
+            class="h-[325px] flex-col justify-between items-start flex text-center"
+          >
+            <div
+              class="h-[85px] flex-col justify-start items-start gap-1.5 flex"
+            >
+              <div
+                class="self-stretch text-[#363636] text-[28px] font-bold font-['Cabinet Grotesk']"
+              >
+                Basic Plan
+              </div>
+              <div
+                class="self-stretch text-[#363636] text-base font-medium font-['Satoshi Variable'] leading-snug"
+              >
+                For companies that are seeking productivity and growth
+              </div>
+            </div>
+            <div
+              class="self-stretch h-52 flex-col justify-start items-center gap-6 flex"
+            >
+              <div
+                class="self-stretch text-[#363636] text-[32px] font-bold font-['Cabinet Grotesk']"
+              >
+                $19/month per user
+              </div>
+              <div
+                class="self-stretch text-[#363636] text-xl font-medium font-['Satoshi Variable'] leading-9"
+              >
+                <ul class="list-disc pl-5 space-y-2">
+                  <li>Time Tracking</li>
+                  <li>Activity Monitoring</li>
+                  <li>Basic Reporting</li>
+                  <li>Email Support</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Box 2 -->
+        <!-- Box 2 (Middle, slightly lower) -->
         <div
-          class="w-full sm:w-[500px] h-[290px] px-[42px] py-[34px] bg-[#e7fced] rounded-xl flex flex-col justify-start items-start gap-2.5"
+          class="w-[361.33px] h-[555px] bg-[#4a7456] my-[70px] rounded-xl border border-[#d7d7d7] p-6"
         >
-          <div class="w-[34.50px] h-[34.50px] relative">
-            <div
-              class="w-[34.50px] h-[34.50px] absolute left-[400px] bg-[#1b7a84] rounded-full"
-            ></div>
-            <div
-              class="w-[26.10px] h-[26.10px] absolute left-[405px] top-[4.20px] overflow-hidden"
-            >
-              <img src="./Images/plus (1).png" alt="Image" />
-            </div>
-          </div>
           <div
-            class="w-[415px] h-[148px] flex flex-col justify-start items-start gap-6"
+            class="h-[325px] flex-col justify-between items-start inline-flex"
           >
             <div
-              class="w-[217px] text-black text-[28px] font-medium font-['Satoshi Variable'] leading-9"
+              class="h-[85px] flex-col justify-start items-start gap-1.5 flex"
             >
-              Work Smarter, Not Harder
+              <div
+                class="self-stretch text-white text-[28px] font-bold font-['Cabinet Grotesk']"
+              >
+                Premium Plan
+              </div>
+              <div
+                class="self-stretch text-[#e8f6ec] text-base font-medium font-['Satoshi Variable'] leading-snug"
+              >
+                For growing companies seeking high-level performance and support
+              </div>
             </div>
             <div
-              class="self-stretch text-[#595959] text-lg font-medium font-['Satoshi Variable'] leading-snug"
+              class="self-stretch h-52 flex-col justify-start items-center gap-6 flex"
             >
-              Empower managers to make informed decisions and employees to
-              deliver their best work every day.
+              <div
+                class="self-stretch text-white text-[32px] font-bold font-['Cabinet Grotesk']"
+              >
+                $39/month per user
+              </div>
+              <div
+                class="self-stretch text-white text-xl font-medium font-['Satoshi Variable'] leading-9"
+              >
+                <ul class="list-disc pl-5 space-y-2">
+                  <li>Time Tracking</li>
+                  <li>Advanced Analytics</li>
+                  <li>Custom Reporting</li>
+                  <li>Priority Email Support</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Box 3 -->
         <div
-          class="w-full sm:w-[500px] h-[290px] px-[42px] py-[34px] bg-[#e7fced] rounded-xl flex flex-col justify-start items-start gap-2.5"
+          class="w-[361.33px] h-[555px] bg-[#f3faf5] rounded-xl border border-[#a6deb6] p-6"
         >
-          <div class="w-[34.50px] h-[34.50px] relative">
+          <div
+            class="h-[325px] flex-col justify-between items-start inline-flex"
+          >
             <div
-              class="w-[34.50px] h-[34.50px] absolute left-[400px] bg-[#1b7a84] rounded-full"
-            ></div>
-            <div
-              class="w-[26.10px] h-[26.10px] absolute left-[405px] top-[4.20px] overflow-hidden"
+              class="h-[85px] flex-col justify-start items-start gap-1.5 flex"
             >
-              <img src="./Images/plus (1).png" alt="Image" />
+              <div
+                class="self-stretch text-[#363636] text-[28px] font-bold font-['Cabinet Grotesk']"
+              >
+                Enterprise Plan
+              </div>
+              <div
+                class="self-stretch text-[#363636] text-base font-medium font-['Satoshi Variable'] leading-snug"
+              >
+                For large organizations needing full-scale productivity tools
+              </div>
             </div>
-          </div>
-          <div class="h-[184px] flex flex-col justify-start items-start gap-6">
             <div
-              class="w-[343px] text-black text-[28px] font-medium font-['Satoshi Variable'] leading-9"
+              class="self-stretch h-52 flex-col justify-start items-center gap-6 flex"
             >
-              Simplify, Streamline, Succeed
-            </div>
-            <div
-              class="self-stretch text-[#595959] text-lg font-medium font-['Satoshi Variable'] leading-snug"
-            >
-              Automate time tracking, payroll integration, and compliance tasks
-              for your team’s success. Intense Team makes managing remote and
-              hybrid teams effortless.
+              <div
+                class="self-stretch text-[#363636] text-[32px] font-bold font-['Cabinet Grotesk']"
+              >
+                $79/month per user
+              </div>
+              <div
+                class="self-stretch text-[#363636] text-xl font-medium font-['Satoshi Variable'] leading-9"
+              >
+                <ul class="list-disc pl-5 space-y-2">
+                  <li>Time Tracking</li>
+                  <li>24/7 Support</li>
+                  <li>Advanced Analytics</li>
+                  <li>Custom Solutions</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
