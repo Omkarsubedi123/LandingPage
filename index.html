@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="NavContainer h-[100px] relative">
+      <div
+        class="NavigationBar h-[82px] flex items-center justify-between px-4 md:px-16 lg:px-28"
+      >
+        <!-------------Outer Frame-------------->
+        <div class="flex items-center justify-between w-[1200px]">
+          <!-------------------First Frame----------------->
+          <div class="FrameOne flex items-center gap-2">
+            <div class="Logo w-[19.16px] h-6">
+              <img src="./Images/Group.png" alt="Logo" />
+            </div>
+            <div class="Intense w-[76.54px] h-[15.51px]">
+              <img src="./Images/Intense.png" alt="Menu" />
+            </div>
+          </div>
+
+          <!----------------------Desktop Navigation----------------->
+          <div class="hidden md:flex items-center justify-between gap-6">
+            <div class="FrameSecond flex gap-10">
+              <div class="text-[#363636] text-base font-medium cursor-pointer">
+                Features
+              </div>
+              <div class="text-[#363636] text-base font-medium cursor-pointer">
+                Solutions
+              </div>
+              <div class="text-[#363636] text-base font-medium cursor-pointer">
+                Download
+              </div>
+              <div class="text-[#363636] text-base font-medium cursor-pointer">
+                Support
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="flex items-center gap-2">
+                <img
+                  src="./Images/Frame.png"
+                  alt="Language"
+                  class="w-[18px] h-[18px]"
+                />
+                <span class="text-[#0a4020] text-xs font-bold">English</span>
+                <img
+                  src="./Images/cheveron-down.png"
+                  alt="Dropdown"
+                  class="w-[15px] h-[15px]"
+                />
+              </div>
+              <div
+                class="border rounded-md px-4 py-2 flex items-center gap-2 cursor-pointer"
+              >
+                <img src="./Images/log-in-04.png" alt="Login" class="w-5 h-5" />
+                <span class="text-[#0a4020] text-base font-bold">Login</span>
+              </div>
+              <div
+                class="bg-[#0a4020] text-white px-4 py-2 rounded-md cursor-pointer"
+              >
+                Get Started
+              </div>
+            </div>
+          </div>
+
+          <!----------------------Hamburger Button------------------>
+          <div
+            class="Hamburger flex flex-col gap-1 md:hidden cursor-pointer"
+            onclick="toggleMenu()"
+          >
+            <!-- <span class="block w-6 h-0.5 bg-black"></span>
+            <span class="block w-6 h-0.5 bg-black"></span>
+            <span class="block w-6 h-0.5 bg-black"></span> -->
+            <img src="./Images/menu-02.png" alt="Image" />
+          </div>
+        </div>
+      </div>
+
+      <!----------------------Mobile Menu---------------------->
+      <div
+        class="MobileMenu hidden flex-col items-start bg-white shadow-md p-4 md:hidden"
+      >
+        <div class="flex flex-col gap-4">
+          <div class="text-[#363636] text-base font-medium cursor-pointer">
+            Features
+          </div>
+          <div class="text-[#363636] text-base font-medium cursor-pointer">
+            Solutions
+          </div>
+          <div class="text-[#363636] text-base font-medium cursor-pointer">
+            Download
+          </div>
+          <div class="text-[#363636] text-base font-medium cursor-pointer">
+            Support
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 mt-4">
+          <div class="flex items-center gap-2">
+            <img
+              src="./Images/Frame.png"
+              alt="Language"
+              class="w-[18px] h-[18px]"
+            />
+            <span class="text-[#0a4020] text-xs font-bold">English</span>
+            <img
+              src="./Images/cheveron-down.png"
+              alt="Dropdown"
+              class="w-[15px] h-[15px]"
+            />
+          </div>
+          <div
+            class="border rounded-md px-4 py-2 flex items-center gap-2 cursor-pointer"
+          >
+            <img src="./Images/log-in-04.png" alt="Login" class="w-5 h-5" />
+            <span class="text-[#0a4020] text-base font-bold">Login</span>
+          </div>
+          <div
+            class="bg-[#0a4020] text-white px-4 py-2 rounded-md cursor-pointer"
+          >
+            Get Started
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------Body Content-------------------->
+    <div class="container mx-auto">
+      <!------------------First Text Content-------------->
+      <div class="card flex flex-col items-center">
+        <div
+          class="text-center text-[#041b0b] text-[52px] font-bold font-['Cabinet Grotesk Variable'] lg:w-full md:w-[500px] sm:w-[331px] pt-[77px]"
+        >
+          Unlock the full potential of your team.
+        </div>
+        <div
+          class="lg:w-[716px] md:w-[500px] sm:[352px] text-center text-[#363636] text-lg font-normal font-['Satoshi Variable'] pt-[20px]"
+        >
+          Designed for businesses embracing remote work, Intense Team tracks
+          attendance, working hours, employee performance, and tasks empowering
+          you to optimize efficiency.
+        </div>
+        <div
+          class="lg:w-[496px] h-[54px] pl-6 pr-1.5 py-1.5 bg-[#f8fbf8] rounded-[10px] border border-[#dae7d3] justify-between items-center inline-flex my-[64px]"
+        >
+          <div
+            class="text-[#c0c0c0] text-base font-normal font-['Satoshi Variable']"
+          >
+            What’s your work email?
+          </div>
+          <div
+            class="px-8 py-[9px] bg-[#46b565] rounded-lg justify-center items-center gap-2.5 flex"
+          >
+            <div
+              class="text-white text-lg font-medium font-['Satoshi Variable']"
+            >
+              Get Started
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------Second Card Content-->
+    <div class="SecContainer ps-[112px] pt-[106px flex flex-wrap]">
+      <!------------------------------Upper Nav------------------->
+      <div
+        class="w-[1216px] h-[693px] relative bg-white rounded-[14.20px] shadow-[2px_2px_16px_0px_rgba(68,130,96,0.10)] border border-[#eaeaea] overflow-hidden"
+      >
+        <!-----------------Body Section of Nav -->
+        <div
+          class="px-[9.65px] py-[6.43px] left-[326.52px] top-[11.26px] absolute rounded-[80.42px] border border-[#b4e1c1] justify-start items-center gap-2 inline-flex"
+        >
+          <div class="w-[19.30px] h-[19.30px] relative overflow-hidden">
+            <img src="./Images/plus-circle.png" alt="Image" />
+          </div>
+          <div
+            class="text-[#062a11] text-[12.87px] font-semibold font-['Satoshi Variable'] leading-none"
+          >
+            Add New
+          </div>
+        </div>
+        <!--------------------------Frame Two----------------------------->
+        <!-------------------------------Search---------------------------->
+        <div
+          class="left-[958.64px] top-[12.06px] absolute justify-start items-center gap-[14.48px] inline-flex"
+        >
+          <div class="p-[6.43px] justify-end items-center gap-2 flex">
+            <div class="w-[19.30px] h-[19.30px] relative overflow-hidden">
+              <img src="./Images/search-lg.png" alt="Image" />
+            </div>
+          </div>
+          <!------------------Bell------------------->
+          <div class="p-[6.43px] justify-end items-center gap-2 flex">
+            <div class="w-[19.30px] h-[19.30px] relative overflow-hidden">
+              <img src="./Images/bell-01.png" alt="Image" />
+            </div>
+          </div>
+          <!---------------------Pluse----------------------->
+          <div class="p-[6.43px] justify-end items-center gap-2 flex">
+            <div class="w-[19.30px] h-[19.30px] relative overflow-hidden">
+              <img src="./Images/message-plus-square.png" alt="Image" />
+            </div>
+          </div>
+          <!---------------------------Profile---------------------->
+          <div
+            class="p-[6.43px] bg-[#18a23f] rounded-[80.42px] border-4 border-[#e1f3e5] justify-end items-center gap-2 flex"
+          >
+            <div class="w-[19.30px] h-[19.30px] relative overflow-hidden">
+              <img src="./Images/user-03.png" alt="Image" />
+            </div>
+          </div>
+        </div>
+        <!----------------------Gap Horizontal Border------------------->
+        <div
+          class="w-[1216px] h-[0px] left-[-5.63px] top-[55.49px] absolute border border-neutral-100"
+        ></div>
+        <!---------------------------Gap Verticle Border-------------->
+        <div
+          class="w-[734.26px] h-[0px] left-[241.27px] top-[789.76px] absolute origin-top-left -rotate-90 border border-neutral-100"
+        ></div>
+
+        <!-----------------------Circle Arrow----------------------->
+        <div
+          class="p-[3.22px] left-[230.01px] top-[335.62px] absolute bg-[#fbfbfb] rounded-[112.59px] border border-[#e9e9e9] justify-end items-center gap-2 inline-flex"
+        >
+          <div class="w-[16.08px] h-[16.08px] relative overflow-hidden">
+            <img src="./Images/chevron-left.png" alt="Image" />
+          </div>
+        </div>
+        <!------------------------Creative Studio------------------>
+        <div
+          class="left-[31.61px] top-[14px] absolute justify-start items-center gap-[53.88px] inline-flex"
+        >
+          <div class="justify-start items-center gap-[9.65px] flex">
+            <div class="w-[30.56px] h-[30.56px] relative">
+              <div
+                class="w-[30.56px] h-[30.56px] left-0 top-0 absolute bg-[#414141] rounded"
+              >
+                <img src="./Images/Group 13.png" alt="Image" />
+              </div>
+              <div
+                class="w-[15.81px] h-[19.81px] left-[7.19px] top-[5.39px] absolute"
+              ></div>
+            </div>
+            <div class="flex-col justify-start items-start inline-flex gap-1">
+              <div
+                class="text-[#414141] text-xs font-bold font-['Satoshi Variable'] leading-none"
+              >
+                CreativeStudio
+              </div>
+              <div
+                class="text-[#414141] text-[9.65px] font-medium font-['Satoshi Variable'] leading-none"
+              >
+                Software Company
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-[4.83px] bg-[#f1f1f1] rounded justify-start items-center gap-2 flex"
+          >
+            <div class="w-[17.69px] h-[17.69px] relative overflow-hidden">
+              <img src="./Images/chevron-selector-vertical.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-----------------------------DashBoard Part--------------------->
+        <div
+          class="h-[309.05px] left-[30px] top-[87.99px] absolute flex-col justify-start items-start gap-[9.65px] inline-flex"
+        >
+          <div
+            class="self-stretch h-[101.33px] flex-col justify-start items-start gap-[9.65px] flex"
+          >
+            <!-------------------------First Box--------------------->
+            <div
+              class="self-stretch h-[101.33px] flex-col justify-start items-start flex"
+            >
+              <div
+                class="self-stretch pl-[9.65px] pr-[102.94px] py-2 bg-[#e1f3e5] rounded-[85.25px] justify-start items-center gap-[15.28px] inline-flex"
+              >
+                <div class="w-[17.69px] h-[17.69px] relative overflow-hidden">
+                  <img src="./Images/home-04.png" alt="" />
+                </div>
+                <div
+                  class="text-[#062a11] text-[12.87px] font-medium font-['Satoshi Variable'] leading-none"
+                >
+                  Dashboard
+                </div>
+              </div>
+              <!-------------------------Manula Time------------------------>
+              <div
+                class="self-stretch pl-[9.65px] pr-[102.94px] py-2 rounded-[85.25px] justify-start items-center gap-[15.28px] inline-flex"
+              >
+                <div class="w-[17.69px] h-[17.69px] relative overflow-hidden">
+                  <img src="./Images/clock-rewind.png" alt="Image" />
+                </div>
+                <div
+                  class="text-[#5d5d5d] text-[12.87px] font-medium font-['Satoshi Variable'] leading-none"
+                >
+                  Manual
+                </div>
+              </div>
+              <!--------------------------Summary--------------------->
+              <div
+                class="self-stretch pl-[9.65px] pr-[102.94px] py-2 rounded-[85.25px] justify-start items-center gap-[15.28px] inline-flex"
+              >
+                <div class="w-[17.69px] h-[17.69px] relative overflow-hidden">
+                  <img src="./Images/bar-chart-circle-01.png" alt="Image" />
+                </div>
+                <div
+                  class="text-[#5d5d5d] text-[12.87px] font-medium font-['Satoshi Variable'] leading-none"
+                >
+                  Summary
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------------Second Box-------------------->
+          <div
+            class="self-stretch h-[94.21px] flex-col justify-start items-start gap-[9.65px] flex"
+          >
+            <!--------------------------Leave Gap Management------------------>
+            <div
+              class="self-stretch pl-[3.22px] justify-start items-start gap-2 inline-flex"
+            >
+              <div
+                class="text-[#7e7e7e] text-[12.87px] font-semibold font-['Satoshi Variable'] leading-none"
+              >
+                Leave Management
+              </div>
+            </div>
+            <!--------------------My Leave------------------->
+            <div
+              class="self-stretch h-[67.56px] flex-col justify-start items-start flex"
+            >
+              <div
+                class="self-stretch pl-[9.65px] pr-[102.94px] py-2 rounded-[85.25px] justify-start items-center gap-[15.28px] inline-flex"
+              >
+                <div class="w-[17.69px] h-[17.69px] relative overflow-hidden">
+                  <img src="./Images/calendar-minus-01.png" alt="Image" />
+                </div>
+                <div
+                  class="text-[#5d5d5d] text-[12.87px] font-medium font-['Satoshi Variable'] leading-none"
+                >
+                  My Leave
+                </div>
+              </div>
+              <!--------------------Holiday---------------->
+              <div
+                class="self-stretch pl-[9.65px] pr-[102.94px] py-2 rounded-[85.25px] justify-start items-center gap-[15.28px] inline-flex"
+              >
+                <div class="w-[17.69px] h-[17.69px] relative overflow-hidden">
+                  <img src="./Images/globe-05.png" alt="Image" />
+                </div>
+                <div
+                  class="text-[#5d5d5d] text-[12.87px] font-medium font-['Satoshi Variable'] leading-none"
+                >
+                  Holidays
+                </div>
+              </div>
+            </div>
+          </div>
+          <!------------------------Third Box------------------>
+          <div
+            class="self-stretch h-[94.21px] flex-col justify-start items-start gap-[9.65px] flex"
+          >
+            <div
+              class="self-stretch pl-[3.22px] justify-start items-start gap-2 inline-flex"
+            >
+              <div
+                class="text-[#7e7e7e] text-[12.87px] font-semibold font-['Satoshi Variable'] leading-none"
+              >
+                Company
+              </div>
+            </div>
+            <!------------------------Salary---------------------->
+            <div
+              class="self-stretch h-[67.56px] flex-col justify-start items-start flex"
+            >
+              <div
+                class="self-stretch pl-[9.65px] pr-[102.94px] py-2 rounded-[85.25px] justify-start items-center gap-[15.28px] inline-flex"
+              >
+                <div class="w-[17.69px] h-[17.69px] relative overflow-hidden">
+                  <img src="./Images/calendar-minus-01.png" alt="Image" />
+                </div>
+                <div
+                  class="text-[#5d5d5d] text-[12.87px] font-medium font-['Satoshi Variable'] leading-none"
+                >
+                  Salary Slip
+                </div>
+              </div>
+              <!-------------------Culture------------------------->
+              <div
+                class="self-stretch pl-[9.65px] pr-[102.94px] py-2 rounded-[85.25px] justify-start items-center gap-[15.28px] inline-flex"
+              >
+                <div class="w-[17.69px] h-[17.69px] relative overflow-hidden">
+                  <img src="./Images/globe-05.png" alt="Image" />
+                </div>
+                <div
+                  class="text-[#5d5d5d] text-[12.87px] font-medium font-['Satoshi Variable'] leading-none"
+                >
+                  Culture
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---------------------------Mid Content------------------>
+        <!--------------------Mid-Side--Content--Background-------------->
+        <div
+          class="w-[530.79px] h-[171.30px] left-[326.52px] top-[86.86px] absolute bg-[#fbfbfb] rounded-[9.65px] border border-neutral-100"
+        ></div>
+        <!--------------------Rigth Side--Content--Background-------------->
+        <div
+          class="w-[257.35px] h-[349.84px] left-[873.40px] top-[86.86px] absolute bg-[#fbfbfb] rounded-[9.65px] border border-neutral-100"
+        ></div>
+        <!-------------------------Mid Content--Text--------------->
+        <div
+          class="left-[345.82px] top-[102.94px] absolute text-[#030303] text-base font-bold font-['Satoshi Variable'] leading-snug"
+        >
+          Hello, Jem. Good morning!
+        </div>
+        <div
+          class="w-[409.35px] left-[345.82px] top-[194.62px] absolute text-[#030303] text-sm font-medium font-['Satoshi Variable'] leading-tight"
+        >
+          "The way to get started is to quit talking and begin doing."
+        </div>
+
+        <div
+          class="left-[345.82px] top-[168.89px] absolute text-[#7e7e7e] text-xs font-bold font-['Satoshi Variable'] leading-none"
+        >
+          Today’s Motivation
+        </div>
+        <div
+          class="left-[729.44px] top-[102.94px] absolute text-[#adadad] text-[12.87px] font-medium font-['Satoshi Variable'] leading-[18.01px]"
+        >
+          November 11, 2024
+        </div>
+        <div
+          class="left-[345.82px] top-[221.16px] absolute text-[#7e7e7e] text-xs font-medium font-['Satoshi Variable'] leading-none"
+        >
+          – Walt Disney
+        </div>
+        <!--------------------Right Side Card Footer------------------->
+        <div
+          class="left-[892.70px] top-[102.94px] absolute text-[#030303] text-[12.87px] font-bold font-['Satoshi Variable']"
+        >
+          Daily Status
+        </div>
+        <div
+          class="left-[892.70px] top-[166.48px] absolute text-[#202020]/60 text-[12.87px] font-bold font-['Satoshi Variable'] leading-[18.01px]"
+        >
+          Clock in
+        </div>
+        <div
+          class="left-[892.70px] top-[191.08px] absolute text-[#030303] text-[25.74px] font-black font-['Satoshi Variable'] leading-9"
+        >
+          10:00 AM
+        </div>
+        <div
+          class="left-[892.70px] top-[275.05px] absolute text-[#202020]/60 text-[12.87px] font-bold font-['Satoshi Variable'] leading-[18.01px]"
+        >
+          Clock out
+        </div>
+        <div
+          class="left-[892.70px] top-[299.17px] absolute text-[#030303] text-[25.74px] font-black font-['Satoshi Variable'] leading-9"
+        >
+          00:00 PM
+        </div>
+        <div class="left-[930.50px] top-[401.31px] absolute text-right">
+          <span
+            class="text-[#7e7e7e] text-[12.87px] font-medium font-['Satoshi Variable'] leading-[18.01px]"
+            >Total working hours: </span
+          ><span
+            class="text-[#030303] text-[12.87px] font-bold font-['Satoshi Variable'] leading-[18.01px]"
+            >0hrs</span
+          >
+        </div>
+        <!------------------------Line Border------------------------ -->
+
+        <div
+          class="w-[213.93px] h-[0px] left-[1107.43px] top-[385.23px] absolute origin-top-left rotate-180 border border-[#e9e9e9]"
+        ></div>
+        <!--------------------------Active Time------------------->
+        <div class="ThirdContent">
+          <div
+            class="w-[170px] h-[142.72px] pl-[19.30px] pr-[67.56px] py-[19.30px] left-[326.52px] top-[295.15px] absolute bg-[#f3faf5] rounded-[9.65px] border border-neutral-100 flex-col justify-start items-start gap-[12.87px] inline-flex"
+          >
+            <div
+              class="p-[9.65px] bg-[#46b565] rounded-[56.30px] justify-start items-center gap-2 inline-flex"
+            >
+              <div class="w-[19.30px] h-[19.30px] relative overflow-hidden">
+                <img src="./Images/laptop-01.png" alt="Image" />
+              </div>
+            </div>
+            <div class="flex-col justify-start items-start gap-[9.65px] flex">
+              <div
+                class="text-[#041b0b] text-[10.87px] font-medium font-['Satoshi Variable']"
+              >
+                Active time
+              </div>
+              <div
+                class="w-[170px] text-[#041b0b] text-base font-black font-['Satoshi Variable'] leading-snug"
+              >
+                6hrs. 20min.
+              </div>
+            </div>
+          </div>
+          <!-----------------------------------Productive Apps------------------->
+          <div
+            class="h-[142.72px] pl-[19.30px] pr-[67.56px] py-[19.30px] left-[512.30px] top-[295.15px] absolute bg-[#f3faf5] rounded-[9.65px] border border-neutral-100 flex-col justify-start items-start gap-[12.87px] flex"
+          >
+            <div
+              class="p-[9.65px] bg-[#46b565] rounded-[56.30px] justify-start items-center gap-2 inline-flex"
+            >
+              <div class="w-[19.30px] h-[19.30px] relative overflow-hidden">
+                <img src="./Images/lightbulb-05.png" alt="Image" />
+              </div>
+            </div>
+            <div class="flex-col justify-start items-start gap-[9.65px] flex">
+              <div
+                class="text-[#041b0b] text-[10.87px] font-medium font-['Satoshi Variable'] leading-tight"
+              >
+                Productive apps
+              </div>
+              <div
+                class="text-[#041b0b] text-base font-black font-['Satoshi Variable'] leading-snug"
+              >
+                60%
+              </div>
+            </div>
+          </div>
+          <!---------------------Idle time Spent-------------->
+          <div
+            class="w-[170px] h-[142.72px] pl-[19.30px] pr-[67.56px] py-[19.30px] left-[696.46px] top-[295.15px] absolute bg-[#f3faf5] rounded-[9.65px] border border-neutral-100 flex-col justify-start items-start gap-[12.87px] inline-flex"
+          >
+            <div
+              class="p-[9.65px] bg-[#46b565] rounded-[56.30px] justify-start items-center gap-2 inline-flex"
+            >
+              <div class="w-[19.30px] h-[19.30px] relative overflow-hidden">
+                <img src="./Images/clock-snooze (1).png" alt="Image" />
+              </div>
+            </div>
+            <div class="flex-col justify-start items-start gap-[9.65px] flex">
+              <div
+                class="text-[#041b0b] text-[10.87px] font-medium font-['Satoshi Variable'] leading-tight"
+              >
+                Idle time spent
+              </div>
+              <div
+                class="w-[170px] text-[#041b0b] text-base font-black font-['Satoshi Variable'] leading-snug"
+              >
+                1hr. 15min.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------------------Right Side last Card--------------->
+        <div
+          class="w-[325.71px] h-[171.30px] left-[805.04px] top-[473.69px] absolute"
+        >
+          <div
+            class="w-[325.71px] h-[171.30px] left-0 top-0 absolute bg-[#fbfbfb] rounded-[9.65px] border border-neutral-100"
+          ></div>
+          <div
+            class="left-[22.52px] top-[16.08px] absolute text-[#030303] text-[12.87px] font-bold font-['Satoshi Variable'] leading-[18.01px]"
+          >
+            Time Spent
+          </div>
+          <div
+            class="w-[280.68px] h-[94.10px] left-[22.52px] top-[54.69px] absolute opacity-50 bg-[#f88d5c] rounded-[9.65px]"
+          ></div>
+          <div
+            class="w-[242.07px] h-[94.10px] left-[22.52px] top-[54.69px] absolute opacity-50 bg-[#fff01e] rounded-tl-[9.65px] rounded-bl-[9.65px]"
+          ></div>
+          <div
+            class="w-[210.71px] h-[94.10px] left-[22.52px] top-[54.69px] absolute opacity-50 bg-[#85cc17] rounded-tl-[9.65px] rounded-bl-[9.65px]"
+          ></div>
+          <div
+            class="w-[192.21px] h-[94.10px] left-[22.52px] top-[54.69px] absolute opacity-50 bg-[#2a78fe] rounded-tl-[9.65px] rounded-bl-[9.65px]"
+          ></div>
+          <div
+            class="w-[153.61px] h-[94.10px] left-[22.52px] top-[54.69px] absolute opacity-50 bg-[#fbfbfb] rounded-tl-[9.65px] rounded-bl-[9.65px]"
+          ></div>
+          <div
+            class="w-[117.42px] h-[94.10px] left-[22.52px] top-[54.69px] absolute opacity-50 bg-lime-500 rounded-tl-[9.65px] rounded-bl-[9.65px]"
+          ></div>
+          <div
+            class="w-[57.90px] h-[94.10px] left-[22.52px] top-[54.69px] absolute opacity-50 bg-[#c6eeae] rounded-tl-[9.65px] rounded-bl-[9.65px]"
+          ></div>
+          <div
+            class="w-[32.97px] h-[94.10px] left-[22.52px] top-[54.69px] absolute opacity-50 bg-[#21b601] rounded-tl-[9.65px] rounded-bl-[9.65px]"
+          ></div>
+          <div
+            class="w-[123.05px] h-[32.97px] left-[71.58px] top-[85.25px] absolute"
+          >
+            <img class="w-[123.05px] h-[32.97px]" src="./Images/Union.png" />
+            <div class="left-[10.13px] top-[4.12px] absolute flex">
+              <span
+                class="text-[#030303] text-xs font-bold font-['Satoshi Variable']"
+                >Google Docx - 30</span
+              ><span
+                class="text-[#030303] text-[8.39px] font-black font-['Satoshi Variable']"
+                >%</span
+              >
+            </div>
+          </div>
+        </div>
+        <!------------------------The last One---------------------->
+        <div
+          class="w-[462.43px] h-[171.30px] left-[326.52px] top-[473.69px] absolute"
+        >
+          <div class="w-[462.43px] h-[171.30px] left-0 top-0 absolute">
+            <div
+              class="w-[462.43px] h-[171.30px] left-0 top-0 absolute bg-[#fbfbfb] rounded-[9.65px] border border-neutral-100"
+            ></div>
+            <div
+              class="left-[22.52px] top-[15.28px] absolute text-[#030303] text-[12.87px] font-bold font-['Satoshi Variable'] leading-[18.01px]"
+            >
+              In/Out Summary
+            </div>
+            <div
+              class="left-[22.52px] top-[51.47px] absolute text-[#202020]/60 text-xs font-bold font-['Satoshi Variable'] leading-none"
+            >
+              Date
+            </div>
+            <div
+              class="left-[22.52px] top-[92.49px] absolute text-[#202020] text-xs font-semibold font-['Satoshi Variable'] leading-none"
+            >
+              11 Nov, 2024
+            </div>
+            <div
+              class="left-[22.52px] top-[135.92px] absolute text-[#202020] text-xs font-semibold font-['Satoshi Variable'] leading-none"
+            >
+              10 Nov, 2024
+            </div>
+            <div
+              class="left-[254.14px] top-[51.47px] absolute text-[#202020]/60 text-xs font-bold font-['Satoshi Variable'] leading-none"
+            >
+              End Time
+            </div>
+            <div
+              class="left-[254.14px] top-[93.29px] absolute text-[#202020]/60 text-xs font-semibold font-['Satoshi Variable']"
+            >
+              5:57 PM
+            </div>
+            <div
+              class="left-[254.14px] top-[136.72px] absolute text-[#202020]/60 text-xs font-semibold font-['Satoshi Variable']"
+            >
+              2:30 PM
+            </div>
+            <div
+              class="left-[352.25px] top-[93.29px] absolute text-[#202020]/60 text-xs font-semibold font-['Satoshi Variable']"
+            >
+              Check out
+            </div>
+            <div
+              class="left-[352.25px] top-[136.72px] absolute text-[#202020]/60 text-xs font-semibold font-['Satoshi Variable']"
+            >
+              Break Time
+            </div>
+            <div
+              class="left-[352.25px] top-[51.47px] absolute text-[#202020]/60 text-xs font-bold font-['Satoshi Variable'] leading-none"
+            >
+              Activity Duration
+            </div>
+            <div
+              class="left-[141.55px] top-[93.29px] absolute text-[#202020]/60 text-xs font-semibold font-['Satoshi Variable']"
+            >
+              10:04 AM
+            </div>
+            <div
+              class="left-[141.55px] top-[136.72px] absolute text-[#202020]/60 text-xs font-semibold font-['Satoshi Variable']"
+            >
+              01:30 AM
+            </div>
+            <div
+              class="left-[141.55px] top-[51.47px] absolute text-[#202020]/60 text-xs font-bold font-['Satoshi Variable'] leading-none"
+            >
+              Start Time
+            </div>
+            <div
+              class="w-[417.40px] h-[0px] left-[22.52px] top-[123.05px] absolute"
+            ></div>
+            <div
+              class="w-[417.40px] h-[0px] left-[22.52px] top-[79.62px] absolute"
+            ></div>
+          </div>
+          <div
+            class="w-[16.08px] h-[16.08px] left-[431.87px] top-[16.08px] absolute overflow-hidden"
+          >
+            <img src="./Images/expand-01.png" alt="Image" />
+          </div>
+        </div>
+        <div
+          class="w-[460px] h-[2407px] left-[936px] top-[216px] absolute"
+        ></div>
+      </div>
+    </div>
+    <!------------------------------Texts----------------->
+    <div class="container flex justify-center px-4 sm:px-6 lg:px-8">
+      <div class="Frame flex flex-col gap-8 py-16">
+        <div
+          class="text-center text-[#878787] text-lg font-normal font-['Satoshi Variable']"
+        >
+          Helping teams succeed
+        </div>
+        <!------------------Boxes----------------------->
+        <div
+          class="Frame_Box w-full flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 py-8"
+        >
+          <!--------------------Logo----------------->
+          <div
+            class="w-40 h-24 px-4 py-6 rounded-lg border flex flex-col justify-center items-center"
+          >
+            <div class="w-[82.55px] h-[26px] relative overflow-hidden">
+              <img src="./Images/Logo.png" alt="Image" />
+            </div>
+          </div>
+          <!-------------------Logo-2-------------------->
+          <div
+            class="w-40 h-24 px-4 py-6 rounded-lg border flex flex-col justify-center items-center"
+          >
+            <div class="w-[82.55px] h-[26px] relative overflow-hidden">
+              <img src="./Images/Logo (1).png" alt="Image" />
+            </div>
+          </div>
+          <!-------------------Logo-3-------------------->
+          <div
+            class="w-40 h-24 px-4 py-6 rounded-lg border flex flex-col justify-center items-center"
+          >
+            <div class="w-[82.55px] h-[26px] relative overflow-hidden">
+              <img src="./Images/Logo (2).png" alt="Image" />
+            </div>
+          </div>
+          <!-------------------Logo-4-------------------->
+          <div
+            class="w-40 h-24 px-4 py-6 rounded-lg border flex flex-col justify-center items-center"
+          >
+            <div class="w-[82.55px] h-[26px] relative overflow-hidden">
+              <img src="./Images/Logo (3).png" alt="Image" />
+            </div>
+          </div>
+          <!-------------------Logo-5-------------------->
+          <div
+            class="w-40 h-24 px-4 py-6 rounded-lg border flex flex-col justify-center items-center"
+          >
+            <div class="w-[82.55px] h-[26px] relative overflow-hidden">
+              <img src="./Images/Logo (4).png" alt="Image" />
+            </div>
+          </div>
+          <!-------------------Logo-6-------------------->
+          <div
+            class="w-40 h-24 px-4 py-6 rounded-lg border flex flex-col justify-center items-center"
+          >
+            <div class="w-[82.55px] h-[26px] relative overflow-hidden">
+              <img src="./Images/Logo (5).png" alt="Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------------Frame Card---------------------->
+    <div class="container mx-auto px-4 py-8">
+      <!-- Header Section -->
+      <div class="text-center mb-8">
+        <p class="text-sm text-green-600 font-medium">Built for Modern Teams</p>
+        <h1 class="text-3xl font-bold text-gray-900 mt-2">
+          Integrated key features for seamless team management
+        </h1>
+        <p class="text-gray-600 mt-4">
+          Boost productivity and manage your team more effectively. Each tool is
+          built to address key challenges in remote work, ensuring efficiency
+          and accountability every step of the way.
+        </p>
+      </div>
+
+      <!-- Content Section -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Left Card -->
+        <div
+          class="bg-[#f1fac9] p-6 rounded-lg flex flex-col justify-between h-[821px]"
+        >
+          <div>
+            <p
+              class="text-green-700 text-sm font-medium // INTENSE TEAM text-[#878787] text-base font-medium font-['Satoshi Variable'] leading-normal"
+            >
+              INTENSE TEAM
+            </p>
+            <h2 class="text-xl font-semibold text-gray-800 mt-4">
+              Where Accountability Meets Efficiency
+            </h2>
+            <p class="text-gray-600 mt-2">
+              Intense Team provides the tools you need to ensure work gets done
+              efficiently, transparently, and collaboratively.
+            </p>
+          </div>
+          <div class="mt-4">
+            <img
+              src="./Images/Image_ManLaptop.png"
+              alt="Illustration of a man using a laptop"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Middle Card -->
+        <div class="space-y-6">
+          <div
+            class="bg-[#43825f] p-4 rounded-lg flex items-center justify-between h-[195px] hover:shadow-lg group"
+          >
+            <div class="text">
+              <h3
+                class="text-2xl font-medium text-white lg:w-[200px] h-[150px]"
+              >
+                Real-Time Monitoring
+              </h3>
+            </div>
+            <div class="img flex h-[120px] items-end relative">
+              <img
+                src="./Images/Frame.png"
+                alt="Real-Time Monitoring Icon"
+                class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 mr-4 transform transition-transform duration-300 group-hover:translate-y-[-25px]"
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-[#1b7984] p-4 rounded-lg flex flex-col items-center justify-center h-[195px] group"
+          >
+            <div class="text_two">
+              <h3 class="text-2xl font-medium text-white">Inactivity Alerts</h3>
+            </div>
+            <div class="img_two flex justify-start items-end h-[147px]">
+              <img
+                src="./Images/Group 16.png"
+                alt="Inactivity Alerts Icon"
+                class="w-40 sm:w-48 md:w-56 lg:w-64 h-20 sm:h-24 md:h-28 lg:h-[100px] transition-all duration-300 ease-in-out group-hover:h-36"
+              />
+            </div>
+          </div>
+          <!----------------------Middle Lower Card----------------------->
+
+          <div
+            class="bg-[#d0ddf1] p-6 rounded-lg flex flex-col justify-between h-[387px] border-4"
+          >
+            <!-- Text Content -->
+            <div class="Txt flex flex-col gap-3">
+              <h3 class="text-lg font-medium text-gray-800">
+                Performance Analytics:
+              </h3>
+              <p class="text-gray-600">
+                Track productivity and performance with actionable insights.
+              </p>
+            </div>
+
+            <!-- Carousel Container -->
+            <div class="carasoul overflow-hidden w-full group relative">
+              <!-- Carousel Inner -->
+              <div
+                class="flex gap-4 transition-transform duration-500 ease-in-out group-hover:translate-x-[-220px]"
+              >
+                <!-- Box 1 -->
+                <div
+                  class="min-w-[212px] pl-6 pr-[84px] py-6 bg-[#fbfbfb] rounded-xl border border-[#efefef] flex flex-col justify-start items-start gap-4"
+                >
+                  <div
+                    class="p-3 bg-[#f1f1de] rounded-[70px] flex justify-center items-center"
+                  >
+                    <div class="w-6 h-6 relative overflow-hidden">
+                      <img src="./Images/laptop-01 (2).png" alt="Laptop" />
+                    </div>
+                  </div>
+                  <div class="flex flex-col justify-start items-start gap-3">
+                    <div
+                      class="text-[#202020]/90 text-base font-medium leading-snug"
+                    >
+                      Active time
+                    </div>
+                    <div class="text-[#202020]/90 text-xl font-bold leading-7">
+                      6hrs. 20min.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div
+                  class="min-w-[212px] pl-6 pr-[84px] py-6 bg-[#fbfbfb] rounded-xl border border-[#efefef] flex flex-col justify-start items-start gap-4"
+                >
+                  <div
+                    class="p-3 bg-[#f1f1de] rounded-[70px] flex justify-center items-center"
+                  >
+                    <div class="w-6 h-6 relative overflow-hidden">
+                      <img src="./Images/lightbulb-05 (2).png" alt="Bulb" />
+                    </div>
+                  </div>
+                  <div class="flex flex-col justify-start items-start gap-3">
+                    <div
+                      class="text-[#202020]/90 text-base font-medium leading-snug"
+                    >
+                      Productive apps
+                    </div>
+                    <div class="text-[#202020]/90 text-xl font-bold leading-7">
+                      60%
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div
+                  class="min-w-[212px] pl-6 pr-[84px] py-6 bg-[#fbfbfb] rounded-xl border border-[#efefef] flex flex-col justify-start items-start gap-4"
+                >
+                  <div
+                    class="p-3 bg-[#f1f1de] rounded-[70px] flex justify-center items-center"
+                  >
+                    <div class="w-6 h-6 relative overflow-hidden">
+                      <img src="./Images/clock-snooze.png" alt="Clock" />
+                    </div>
+                  </div>
+                  <div class="flex flex-col justify-start items-start gap-3">
+                    <div
+                      class="text-[#202020]/90 text-base font-medium leading-snug"
+                    >
+                      Idle time spent
+                    </div>
+                    <div class="text-[#202020]/90 text-xl font-bold leading-7">
+                      1hr. 15min.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- < Right Top Card -->
+        <div class="flex flex-col space-y-6">
+          <div
+            class="bg-[#d7f3df] p-6 rounded-lg flex flex-col justify-between h-[418px]"
+          >
+            <div class="Text_Three">
+              <h3 class="text-lg font-medium text-gray-800">
+                Customizable Dashboards:
+              </h3>
+              <p class="text-gray-600 mt-2">
+                Intense Team provides the tools you need and is customizable.
+              </p>
+            </div>
+
+            <div
+              class="Images_Three relative h-[300px] w-full transform transition-transform duration-300 group"
+            >
+              <!-- First Div (Rotate Left) -->
+              <div
+                class="absolute left-[5%] top-[10%] w-20 sm:w-24 h-[70px] sm:h-[80px] px-[22px] bg-white rounded-lg border border-[#e2e2e2] flex justify-center items-center transform transition-transform duration-300 group-hover:rotate-[-65deg]"
+              >
+                <div
+                  class="w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] relative overflow-hidden"
+                >
+                  <img
+                    src="./Images/home-04.png"
+                    alt="Home"
+                    class="w-full h-full"
+                  />
+                </div>
+              </div>
+
+              <!-- Second Div (Zoom-In Effect) -->
+              <div
+                class="absolute left-[35%] top-[35%] w-20 sm:w-24 h-[70px] sm:h-[80px] px-[22px] bg-white rounded-lg border border-[#e2e2e2] flex justify-center items-center transform transition-transform duration-300 group-hover:scale-110"
+              >
+                <div
+                  class="w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] relative overflow-hidden"
+                >
+                  <img
+                    src="./Images/calendar-minus-01.png"
+                    alt="Calendar"
+                    class="w-full h-full"
+                  />
+                </div>
+              </div>
+
+              <!-- Third Div (Rotate Right) -->
+              <div
+                class="absolute left-[65%] top-[65%] w-20 sm:w-24 h-[70px] sm:h-[80px] px-[22px] bg-white rounded-lg border border-[#e2e2e2] flex justify-center items-center transform transition-transform duration-300 group-hover:rotate-[65deg]"
+              >
+                <div
+                  class="w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] relative overflow-hidden"
+                >
+                  <img
+                    src="./Images/clock-snoozeBlack.png"
+                    alt="Clock"
+                    class="w-full h-full"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-----------------------Card Three Lower one--------------------->
+          <div
+            class="w-full max-w-[508px] h-[381px] relative rounded-3xl overflow-hidden"
+          >
+            <!-- Background Box -->
+            <div
+              class="w-[608px] h-[490px] left-[-50px] top-0 absolute bg-[#3b5b84] rounded-3xl"
+            ></div>
+
+            <!-- Heading -->
+            <div
+              class="w-[308px] left-[26px] top-[26px] absolute text-white text-[28px] font-bold font-['Satoshi Variable'] leading-loose"
+            >
+              Appraise your team
+            </div>
+
+            <!-- List Container -->
+            <div
+              class="w-[90%] max-w-[400px] pb-5 left-[112px] top-[171px] absolute bg-[#e8edea] rounded-xl justify-center items-center inline-flex overflow-hidden"
+            >
+              <div
+                class="grow shrink basis-0 self-stretch flex-col justify-start items-start inline-flex"
+              >
+                <div
+                  class="pl-20 pr-[145px] py-[15px] bg-[#e8edea] justify-start items-center inline-flex"
+                >
+                  <div
+                    class="text-[#202020]/60 text-sm font-bold font-['Satoshi Variable'] leading-tight"
+                  >
+                    Employee Name
+                  </div>
+                </div>
+
+                <!-- Employee List -->
+                <div
+                  class="self-stretch h-[60px] px-[17px] py-3.5 bg-[#e8edea] flex-col justify-start items-start gap-2.5 flex group"
+                >
+                  <!-- Employee Item 1 -->
+                  <div
+                    class="justify-start items-center gap-[41px] inline-flex group-hover:flex-row-reverse transition-all duration-500"
+                  >
+                    <div
+                      class="w-[22px] h-[22px] rounded-md border border-[#d9d9d9]"
+                    ></div>
+                    <div
+                      class="mix-blend-luminosity justify-start items-center gap-2 flex"
+                    >
+                      <img
+                        class="w-7 h-7 rounded-[74px] border border-[#e8f6ec]"
+                        src="https://s3-alpha-sig.figma.com/img/7d1d/a60a/9f79cdae83f1089ad3922f0b66cd3b3b?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HxyIs~bfZpNq7sycJLiHHZg140~XdsuEquQsyToIEQ3Rjh-Fzzh2wCDjvx3QK4porT5-ldlJN3TT9Od7UR73v6fINq3RnVgdcUxz3UxOPmczcWkudAZ9RsbrtIX6POKUXG4RA7to8VG6Obwee4feRQYlMlsGVy55fTe9PnXXNJNLt70ZSPv-Xcj6~mdf48ai31p9ApPhMGZEPuUts4kDqngrKmb1lHVtSNs6-l~toDoMk6-fG19RL1nf5QBMj1veQDkIknb~vijqSUpKARpVadrqE4DR~PnChnlZdurIQ8PzE4yICemwYpI3VVeCiVO3BUU8U7vR5JsQGQpTSQjtBw__"
+                      />
+                      <div
+                        class="text-[#202020] text-sm font-semibold font-['Satoshi Variable'] leading-tight"
+                      >
+                        <span class="group-hover:hidden">Dipika Giri</span>
+                        <span class="hidden group-hover:block"
+                          >Giri Dipika</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Employee Item 2 -->
+                <div
+                  class="self-stretch h-[60px] px-[17px] py-3.5 bg-[#e8edea] border-t border-b border-[#dedede] flex-col justify-start items-start gap-2.5 flex group"
+                >
+                  <div
+                    class="justify-start items-center gap-[41px] inline-flex group-hover:flex-row-reverse transition-all duration-500"
+                  >
+                    <div
+                      class="w-[22px] h-[22px] rounded-md border border-[#d9d9d9]"
+                    ></div>
+                    <div
+                      class="mix-blend-luminosity justify-start items-center gap-2 flex"
+                    >
+                      <img
+                        class="w-7 h-7 rounded-[74px] border border-[#e8f6ec]"
+                        src="https://s3-alpha-sig.figma.com/img/0a6e/06f7/b571bda00149865dab2e9cf2b18be225?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C3Mt1-M377G4AmBBwadSjwl4O9nTFVEUQbTulL70V5-CuqMz5HFBUW45AvVpk7OFFZPvx9QgSGGmTGke~f5svVX44skyiCpL3fNjvvQWJTE30d5xfbLrPWNtmrBmNchxDdM3P85CAO3Nkni91ejvB3j8vybiamL-B0zfrUsNPmRsrm5vX38NUo~r-p5dzgIXdlWoJZij8O9YTnS-BfJtJgOMIqrt9EjXoQfmVIcZ0rzh-EAmqM-B~YkhhcEcyTFQGVPm0oZ-3dSQsxnl-DhuFTfy~BDsD~RcTPCwRigl9ec2ZcM884F0Qcwr6OT~Rhs8AT46PdkUwYzkSHbejW912Q__"
+                      />
+                      <div
+                        class="text-[#202020] text-sm font-semibold font-['Satoshi Variable'] leading-tight"
+                      >
+                        <span class="group-hover:hidden">Jem Khadgi</span>
+                        <span class="hidden group-hover:block">Khadgi Jem</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Employee Item 3 -->
+                <div
+                  class="self-stretch h-[60px] px-[17px] py-3.5 bg-[#e8edea] border-t border-b border-[#dedede] flex-col justify-start items-start gap-2.5 flex group"
+                >
+                  <div
+                    class="justify-start items-center gap-[41px] inline-flex group-hover:flex-row-reverse transition-all duration-500"
+                  >
+                    <div
+                      class="w-[22px] h-[22px] rounded-md border border-[#d9d9d9]"
+                    ></div>
+                    <div
+                      class="mix-blend-luminosity justify-start items-center gap-2 flex"
+                    >
+                      <img
+                        class="w-7 h-7 rounded-[74px] border border-[#e8f6ec]"
+                        src="https://s3-alpha-sig.figma.com/img/24f3/d2c9/f7b7a0323599800631e3ddb0ded83d25?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XLoQa8uA097cflXeiOS6H9~UHW9VNAeiIccuBRT7YxC~OfxObDDWvhxIGutRYCdCcK~hUYGclccr7Cnc-PcwA~lFwKYMPJYCm-wdi3epFy-35ijGBFs5Ce1cuevyK-IYii5UrH~jwRijTkiw4UwtPtEIxVwo-wQb6hoPI638X91tUznP~4k4xxFPKWjF156xipFyiBZ-jet6GRzsA6jPtXsgFRb15EP~rEd~Iy6rO7p0QT9XMXqut~8zCIrhueCjj1e4azWwqNkdNwaK~-nd4K-CeDylrkknNIfp6Kh1-kLl4tcQQ~mvzIQLMHb3J87yNtkq7pIDy9xEuuMF~CjPwg__"
+                      />
+                      <div
+                        class="text-[#202020] text-sm font-semibold font-['Satoshi Variable'] leading-tight"
+                      >
+                        <span class="group-hover:hidden">Alisha Sharma</span>
+                        <span class="hidden group-hover:block"
+                          >Sharma Alisha</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subheading -->
+            <div
+              class="w-[90%] max-w-[457px] left-[26px] top-[74px] absolute text-neutral-100 text-lg font-medium font-['Satoshi Variable'] leading-snug"
+            >
+              Track productivity and performance with actionable insights.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------Next Layer----------------------------------->
+    <div class="NextCard max-w-full mx-auto py-[80px] px-4 sm:px-8">
+      <!-- Section 1: Industries & Heading -->
+      <div
+        class="h-auto flex-col justify-center w-[100%] items-center gap-6 inline-flex sm:px-12"
+      >
+        <div
+          class="px-6 py-2.5 bg-[#dff1c2] rounded-md border border-lime-500 justify-center items-center gap-2.5 inline-flex"
+        >
+          <div
+            class="text-center text-[#4d4d4d] text-base sm:text-lg font-medium font-['Satoshi Variable'] leading-normal"
+          >
+            Industries
+          </div>
+        </div>
+        <div class="flex-col justify-start items-center gap-4 flex text-center">
+          <div
+            class="text-[#041b0b] text-2xl sm:text-3xl font-bold font-['Cabinet Grotesk Variable'] leading-[44px] sm:leading-[56px]"
+          >
+            See how companies in different industries use Intense
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Categories -->
+      <div class="NextLayer py-4 sm:py-8">
+        <div
+          class="w-full max-w-6xl mx-auto flex flex-wrap justify-center gap-6 sm:gap-24"
+        >
+          <div
+            class="px-4 py-2.5 border-b-2 border-[#cae6a0] flex justify-center items-center gap-2.5"
+          >
+            <div
+              class="text-[#4d4d4d] text-lg sm:text-xl font-medium font-['Satoshi Variable'] leading-[48px]"
+            >
+              Tech & Software Development
+            </div>
+          </div>
+          <div
+            class="text-[#686868] text-base sm:text-lg font-normal font-['Satoshi Variable'] leading-[48px]"
+          >
+            Freelancers & Contractors
+          </div>
+          <div
+            class="text-[#686868] text-base sm:text-lg font-normal font-['Satoshi Variable'] leading-[48px]"
+          >
+            Education Providers
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Body Content -->
+      <div
+        class="imgContent flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-12 px-4 py-8 sm:px-8"
+      >
+        <!-- Image -->
+        <div class="img w-full sm:w-[280px] h-auto">
+          <img
+            class="w-full h-auto object-cover rounded-lg shadow-md"
+            src="https://s3-alpha-sig.figma.com/img/a8be/a09b/d6eaba1fafe1b51f0abc8574bd80f1ab?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZA8DPCqqY4W3HfpjkW~27z6Rdur0j5IdX1vzvhi0Q6TDz60FOMJtYF7koR0M30MR-y~UhYZBn1N3nNhAohEfIvkYgPCru~13Qr-66~Ig-Q4zLjYJgjuFXTg37WYqluPg0lGjXBoFF8JrqnEHckysGd4ccDkYtdN~wmZa3U5mv7J437tJ~r16-9yxsw27GiSXY1rgu2upt2XUTkRvRo-mLql4AE8PKghVjEFX4W0kS1uPWj5DQM3PjOIC5E02XSWtLMkR9xLBaVeI7kS1b9IP84tSYuxXNMoFWzm7J35auDlQ3h8yfFOAHx7GFH6lTqhMnToDSNq9YPhTPGFAYwoDRQ__"
+            alt="Industry Image"
+          />
+        </div>
+
+        <!-- Content -->
+        <div
+          class="content w-[auto] sm:w-[600px] h-auto flex flex-col justify-start items-start gap-8"
+        >
+          <div
+            class="self-stretch h-auto flex-col justify-start items-start gap-3.5 flex"
+          >
+            <div
+              class="text-[#5d5d5d] text-xl sm:text-2xl font-medium font-['Satoshi Variable'] leading-9"
+            >
+              At Vrit Tech
+            </div>
+            <div
+              class="text-[#363636] text-lg sm:text-xl font-normal font-['Satoshi Variable'] leading-7 py-5"
+            >
+              "Intense Team has been a game-changer for our remote software
+              development team. With its real-time activity tracking and
+              detailed performance analytics, we can now identify bottlenecks
+              quickly and optimize our workflow. It’s made project management
+              smoother and has significantly boosted our team’s productivity."
+            </div>
+          </div>
+          <div
+            class="text-right text-[#5d5d5d] text-lg sm:text-xl font-medium font-['Satoshi Variable'] leading-normal"
+          >
+            - Rahul Sharma, Engineering Manager
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------Next Content----------------------->
+    <div class="ContentThree">
+      <!-- Title Section -->
+      <div
+        class="w-full h-[116px] flex flex-col justify-center items-center gap-16 py-[50px]"
+      >
+        <div class="h-[116px] flex flex-col justify-start items-center gap-6">
+          <div
+            class="px-[19px] py-1.5 bg-[#dff1c2] rounded-md border border-lime-500 justify-center items-center gap-2.5 inline-flex"
+          >
+            <div
+              class="text-center text-[#4d4d4d] text-base font-medium font-['Satoshi Variable'] leading-normal"
+            >
+              Reasons
+            </div>
+          </div>
+          <div
+            class="self-stretch h-14 flex flex-col justify-start items-center gap-4"
+          >
+            <div
+              class="self-stretch text-center text-[#041b0b] text-[32px] sm:text-[52px] font-bold font-['Cabinet Grotesk Variable'] leading-[56px]"
+            >
+              Why they chose Intense?
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Boxes Section -->
+      <div class="boxes flex flex-wrap justify-center py-[70px] gap-10">
+        <!-- Box 1 -->
+        <div
+          class="w-full sm:w-[500px] h-[290px] px-[42px] py-[34px] bg-[#49875b] rounded-xl flex flex-col justify-start items-start gap-2.5"
+        >
+          <div class="w-[34.50px] h-[34.50px] relative">
+            <div
+              class="w-[34.50px] h-[34.50px] absolute left-[400px] bg-[#f8fdea] rounded-full"
+            ></div>
+            <div
+              class="w-[26.10px] h-[26.10px] absolute left-[405px] top-[4.20px] overflow-hidden"
+            >
+              <img src="./Images/plus.png" alt="Image" />
+            </div>
+          </div>
+          <div class="h-[140px] flex flex-col justify-start items-start gap-6">
+            <div
+              class="text-[#f8fdea] text-[28px] font-medium font-['Satoshi Variable'] leading-9"
+            >
+              Stay Accountable, Work Transparently
+            </div>
+            <div
+              class="self-stretch text-[#f8fdea] text-lg font-medium font-['Satoshi Variable'] leading-snug"
+            >
+              Keep your team focused and distraction-free with real-time
+              monitoring and detailed activity logs.
+            </div>
+          </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div
+          class="w-full sm:w-[500px] h-[290px] px-[42px] py-[34px] bg-[#e7fced] rounded-xl flex flex-col justify-start items-start gap-2.5"
+        >
+          <div class="w-[34.50px] h-[34.50px] relative">
+            <div
+              class="w-[34.50px] h-[34.50px] absolute left-[400px] bg-[#1b7a84] rounded-full"
+            ></div>
+            <div
+              class="w-[26.10px] h-[26.10px] absolute left-[405px] top-[4.20px] overflow-hidden"
+            >
+              <img src="./Images/plus (1).png" alt="Image" />
+            </div>
+          </div>
+          <div
+            class="w-[415px] h-[148px] flex flex-col justify-start items-start gap-6"
+          >
+            <div
+              class="w-[217px] text-black text-[28px] font-medium font-['Satoshi Variable'] leading-9"
+            >
+              Work Smarter, Not Harder
+            </div>
+            <div
+              class="self-stretch text-[#595959] text-lg font-medium font-['Satoshi Variable'] leading-snug"
+            >
+              Empower managers to make informed decisions and employees to
+              deliver their best work every day.
+            </div>
+          </div>
+        </div>
+
+        <!-- Box 3 -->
+        <div
+          class="w-full sm:w-[500px] h-[290px] px-[42px] py-[34px] bg-[#e7fced] rounded-xl flex flex-col justify-start items-start gap-2.5"
+        >
+          <div class="w-[34.50px] h-[34.50px] relative">
+            <div
+              class="w-[34.50px] h-[34.50px] absolute left-[400px] bg-[#1b7a84] rounded-full"
+            ></div>
+            <div
+              class="w-[26.10px] h-[26.10px] absolute left-[405px] top-[4.20px] overflow-hidden"
+            >
+              <img src="./Images/plus (1).png" alt="Image" />
+            </div>
+          </div>
+          <div class="h-[184px] flex flex-col justify-start items-start gap-6">
+            <div
+              class="w-[343px] text-black text-[28px] font-medium font-['Satoshi Variable'] leading-9"
+            >
+              Simplify, Streamline, Succeed
+            </div>
+            <div
+              class="self-stretch text-[#595959] text-lg font-medium font-['Satoshi Variable'] leading-snug"
+            >
+              Automate time tracking, payroll integration, and compliance tasks
+              for your team’s success. Intense Team makes managing remote and
+              hybrid teams effortless.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
